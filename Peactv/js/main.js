@@ -20,7 +20,22 @@ $(document).ready(function () {
             sources: [
                 {src: 'http://peacetv.ashttp22.visionip.tv/live/peacetv-peacetv-peacetv-china-hsslive-25f-16x9-SD/chunklist.m3u8', type: 'application/x-mpegURL'},
             ]
-        },
+        },     
+        
+        {
+            name: 'Peacetv English',
+            sources: [
+                {src: 'http://peacetv.ashttp22.visionip.tv/live/peacetv-peacetv-peacetv-english-hsslive-25f-16x9-SD/chunklist.m3u8', type: 'application/x-mpegURL'},
+            ]
+		},
+		
+	 {
+           name: '',
+            sources: [
+                {src: '', type: 'application/x-mpegURL' },	
+        
+        
+        
         
             ]
         }]);
