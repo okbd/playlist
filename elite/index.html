@@ -1,0 +1,559 @@
+
+
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+ 
+ <title>Elite Video Player – Live Preview</title>
+
+ <link rel='stylesheet' id='elite_player_style-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/css/elite.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elite_player_icons-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/css/elite-font-awesome.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elite_player_scrollbar-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/css/jquery.mCustomScrollbar.min.css?ver=5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.4.18' type='text/css' media='all' />
+
+<link rel='stylesheet' id='offtheshelf-style-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/themes/off-the-shelf/style.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/themes/off-the-shelf/css/font-awesome.min.css?ver=5.2.5' type='text/css' media='all' />
+
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":"body"};
+var panelsStyles = {"fullContainer":"body"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/siteorigin-panels/js/styling-24.min.js?ver=2.4.18'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/embed.min.js?ver=5.1'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/hls.js@latest?ver=5.1'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/jquery.mCustomScrollbar.min.js?ver=5.1'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/froogaloop.min.js?ver=5.1'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/THREEx.FullScreen.min.js?ver=5.1'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/Playlist.min.js?ver=5.1'></script>
+<script type='text/javascript' src='http://creativeinteractivemedia.com/player/Elite_video_player/wp-content/plugins/Elite-video-player/js/videoPlayer.min.js?ver=5.1'></script>
+
+
+  <style type="text/css" media="all" id="siteorigin-panels-grids-wp_head">/* Layout 65 */ #pg-65-0 , #pg-65-1 , #pg-65-2 , #pg-65-3 , #pg-65-4 , #pg-65-5 , #pg-65-6 , #pg-65-7 , #pg-65-8 , #pg-65-9 , #pg-65-10 , #pg-65-11 , #pg-65-12 , #pg-65-13 , #pg-65-14 , #pg-65-15 , #pg-65-16 , #pg-65-17 , #pg-65-18 , #pg-65-19 , #pg-65-20 , #pg-65-21 , #pl-65 .panel-grid-cell .so-panel , #pl-65 .panel-grid-cell .so-panel:last-child { margin-bottom:0px } #pg-65-0 .panel-grid-cell , #pg-65-2 .panel-grid-cell , #pg-65-8 .panel-grid-cell , #pg-65-9 .panel-grid-cell , #pg-65-13 .panel-grid-cell , #pg-65-14 .panel-grid-cell , #pg-65-16 .panel-grid-cell , #pg-65-18 .panel-grid-cell , #pg-65-20 .panel-grid-cell { float:none } #pgc-65-1-0 , #pgc-65-1-1 , #pgc-65-1-2 , #pgc-65-3-0 , #pgc-65-3-1 , #pgc-65-3-2 , #pgc-65-4-0 , #pgc-65-4-1 , #pgc-65-4-2 , #pgc-65-5-0 , #pgc-65-5-1 , #pgc-65-5-2 , #pgc-65-6-0 , #pgc-65-6-1 , #pgc-65-6-2 , #pgc-65-10-0 , #pgc-65-10-1 , #pgc-65-10-2 , #pgc-65-11-0 , #pgc-65-11-1 , #pgc-65-11-2 , #pgc-65-12-0 , #pgc-65-12-1 , #pgc-65-12-2 { width:33.333% } #pg-65-1 .panel-grid-cell , #pg-65-3 .panel-grid-cell , #pg-65-4 .panel-grid-cell , #pg-65-5 .panel-grid-cell , #pg-65-6 .panel-grid-cell , #pg-65-7 .panel-grid-cell , #pg-65-10 .panel-grid-cell , #pg-65-11 .panel-grid-cell , #pg-65-12 .panel-grid-cell , #pg-65-15 .panel-grid-cell , #pg-65-17 .panel-grid-cell , #pg-65-19 .panel-grid-cell , #pg-65-21 .panel-grid-cell , #pg-65-22 .panel-grid-cell { float:left } #pgc-65-7-0 , #pgc-65-7-1 , #pgc-65-19-0 , #pgc-65-19-1 , #pgc-65-21-0 , #pgc-65-21-1 { width:50% } #pgc-65-15-0 , #pgc-65-15-1 , #pgc-65-15-2 , #pgc-65-15-3 { width:25% } #pgc-65-17-0 { width:40.013% } #pgc-65-17-1 { width:59.987% } #pgc-65-22-0 { width:15.041% } #pgc-65-22-1 { width:69.995% } #pgc-65-22-2 { width:14.964% } #pg-65-0 , #pg-65-1 , #pg-65-2 , #pg-65-3 , #pg-65-4 , #pg-65-5 , #pg-65-6 , #pg-65-7 , #pg-65-8 , #pg-65-9 , #pg-65-10 , #pg-65-11 , #pg-65-12 , #pg-65-13 , #pg-65-14 , #pg-65-15 , #pg-65-16 , #pg-65-17 , #pg-65-18 , #pg-65-19 , #pg-65-20 , #pg-65-22 { margin-left:-15px;margin-right:-15px } #pg-65-0 .panel-grid-cell , #pg-65-1 .panel-grid-cell , #pg-65-2 .panel-grid-cell , #pg-65-3 .panel-grid-cell , #pg-65-4 .panel-grid-cell , #pg-65-5 .panel-grid-cell , #pg-65-6 .panel-grid-cell , #pg-65-7 .panel-grid-cell , #pg-65-8 .panel-grid-cell , #pg-65-9 .panel-grid-cell , #pg-65-10 .panel-grid-cell , #pg-65-11 .panel-grid-cell , #pg-65-12 .panel-grid-cell , #pg-65-13 .panel-grid-cell , #pg-65-14 .panel-grid-cell , #pg-65-15 .panel-grid-cell , #pg-65-16 .panel-grid-cell , #pg-65-17 .panel-grid-cell , #pg-65-18 .panel-grid-cell , #pg-65-19 .panel-grid-cell , #pg-65-20 .panel-grid-cell , #pg-65-22 .panel-grid-cell { padding-left:15px;padding-right:15px } @media (max-width:780px){ #pg-65-0 .panel-grid-cell , #pg-65-1 .panel-grid-cell , #pg-65-2 .panel-grid-cell , #pg-65-3 .panel-grid-cell , #pg-65-4 .panel-grid-cell , #pg-65-5 .panel-grid-cell , #pg-65-6 .panel-grid-cell , #pg-65-7 .panel-grid-cell , #pg-65-8 .panel-grid-cell , #pg-65-9 .panel-grid-cell , #pg-65-10 .panel-grid-cell , #pg-65-11 .panel-grid-cell , #pg-65-12 .panel-grid-cell , #pg-65-13 .panel-grid-cell , #pg-65-14 .panel-grid-cell , #pg-65-15 .panel-grid-cell , #pg-65-16 .panel-grid-cell , #pg-65-17 .panel-grid-cell , #pg-65-18 .panel-grid-cell , #pg-65-19 .panel-grid-cell , #pg-65-20 .panel-grid-cell , #pg-65-21 .panel-grid-cell , #pg-65-22 .panel-grid-cell { float:none;width:auto } #pgc-65-1-0 , #pgc-65-1-1 , #pgc-65-3-0 , #pgc-65-3-1 , #pgc-65-4-0 , #pgc-65-4-1 , #pgc-65-5-0 , #pgc-65-5-1 , #pgc-65-6-0 , #pgc-65-6-1 , #pgc-65-7-0 , #pgc-65-10-0 , #pgc-65-10-1 , #pgc-65-11-0 , #pgc-65-11-1 , #pgc-65-12-0 , #pgc-65-12-1 , #pgc-65-15-0 , #pgc-65-15-1 , #pgc-65-15-2 , #pgc-65-17-0 , #pgc-65-19-0 , #pgc-65-21-0 , #pgc-65-22-0 , #pgc-65-22-1 , #pl-65 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pl-65 .panel-grid , #pl-65 .panel-grid-cell {  } #pl-65 .panel-grid .panel-grid-cell-empty { display:none }  } /* Layout 64 */ #pg-64-0 , #pg-64-1 , #pl-64 .panel-grid-cell .so-panel , #pl-64 .panel-grid-cell .so-panel:last-child { margin-bottom:0px } #pg-64-0 .panel-grid-cell , #pg-64-2 .panel-grid-cell { float:none } #pgc-64-1-0 , #pgc-64-1-2 { width:10.911% } #pgc-64-1-1 { width:78.179% } #pg-64-1 .panel-grid-cell { float:left } #pg-64-0 , #pg-64-1 , #pg-64-2 { margin-left:-15px;margin-right:-15px } #pg-64-0 .panel-grid-cell , #pg-64-1 .panel-grid-cell , #pg-64-2 .panel-grid-cell { padding-left:15px;padding-right:15px } @media (max-width:780px){ #pg-64-0 .panel-grid-cell , #pg-64-1 .panel-grid-cell , #pg-64-2 .panel-grid-cell { float:none;width:auto } #pgc-64-1-0 , #pgc-64-1-1 , #pl-64 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pl-64 .panel-grid , #pl-64 .panel-grid-cell {  } #pl-64 .panel-grid .panel-grid-cell-empty { display:none }  } </style>
+
+
+
+
+<div class="panel-grid" id="pg-64-1" ><div class="siteorigin-panels-stretch row-justification-center panel-row-style" style="margin-bottom: 0; padding: 20px 0 0px 0; " data-stretch-type="full" ><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-64-1-0" ></div><div class="panel-grid-cell panel-grid-cell-mobile-last" id="pgc-64-1-1" ><div class="so-panel ots-raw-html panel-first-child panel-last-child" id="panel-64-1-1-0" data-index="1"><div class="Elite_video_player" id="1" >
+<div id="elite_options" style="display:none;"> {
+    "id":"1",
+    "instanceName":"Banner",
+    "videos":[ {
+        "videoType": "HTML5", "title": "AD 5 sec + Pieces After Effects project", "description": "Video by InlifeThrill design.", "info": "Video info goes here.<br>This text can be HTML formatted.<br>You can disable this info window in player options. <br><br>Lorem ipsum dolor sit amet, eu pri dolores theophrastus. Posidonium vituperatoribus cu mel, cum feugiat nostrum sapientem ne. Vis ea summo persius, unum velit erant in eos, pri ut suas iriure euripidis. Ad augue expetendis sea. Ne usu saperet appetere honestatis, ne qui nulla debitis sententiae.", "thumbImg": "http:\/\/creativeinteractivemedia.com\/player\/Elite_video_player\/wp-content\/uploads\/2016\/11\/pic1.jpg", "mp4HD": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Pieces.mp4", "mp4SD": "http:\/\/creativeinteractivemedia.com\/player\/videos\/PiecesSD.mp4", "ccUrl": "undefined", "enable_mp4_download": "yes", "prerollAD": "yes", "prerollGotoLink": "http:\/\/codecanyon.net\/", "preroll_mp4": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Broadcast_Long_Shadow_Package.mp4", "prerollSkipTimer": "5", "midrollAD": "yes", "midrollAD_displayTime": "00:10", "midrollGotoLink": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Broadcast_Long_Shadow_Package.mp4", "midroll_mp4": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Logo_Explode.mp4", "midrollSkipTimer": "5", "postrollAD": "yes", "postrollGotoLink": "http:\/\/codecanyon.net\/", "postroll_mp4": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Logo_Light.mp4", "postrollSkipTimer": "5", "popupAdShow": "yes", "popupImg": "http:\/\/creativeinteractivemedia.com\/player\/Elite_video_player\/wp-content\/uploads\/2016\/11\/popup.jpg", "popupAdStartTime": "00:03", "popupAdEndTime": "00:07", "popupAdGoToLink": "http:\/\/codecanyon.net\/"
+    }
+    ,
+
+    {
+        "videoType": "HTML5", "title": "AD 5 sec + Particle Impacts After Effects Project", "description": "Video by InlifeThrill design.", "info": "Video info goes here.<br>This text can be HTML formatted.<br>You can disable this info window in player options. <br><br>Lorem ipsum dolor sit amet, eu pri dolores theophrastus. Posidonium vituperatoribus cu mel, cum feugiat nostrum sapientem ne. Vis ea summo persius, unum velit erant in eos, pri ut suas iriure euripidis. Ad augue expetendis sea. Ne usu saperet appetere honestatis, ne qui nulla debitis sententiae.", "thumbImg": "http:\/\/creativeinteractivemedia.com\/player\/Elite_video_player\/wp-content\/uploads\/2016\/11\/pic12.jpg", "mp4HD": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Particle_Impacts.mp4", "mp4SD": "http:\/\/creativeinteractivemedia.com\/player\/videos\/Particle_ImpactsSD.mp4", "ccUrl": "undefined", "enable_mp4_download": "yes", "prerollAD": "yes", "prerollGotoLink": "http:\/\/codecanyon.net\/", "preroll_mp4": "http:\/\/creativeinteractivemedia.com\/player\/videos\/i_Create.mp4", "prerollSkipTimer": "5", "midrollAD": "no", "midrollAD_displayTime": "midrollAD_displayTime", "midrollGotoLink": "midrollGotoLink", "midroll_mp4": "midroll_mp4", "midrollSkipTimer": "midrollSkipTimer", "postrollAD": "no", "postrollGotoLink": "postrollGotoLink", "postroll_mp4": "postroll_mp4", "postrollSkipTimer": "postrollSkipTimer", "popupAdShow": "no", "popupImg": "popupImg", "popupAdStartTime": "popupAdStartTime", "popupAdEndTime": "popupAdEndTime", "popupAdGoToLink": "popupAdGoToLink"
+    }
+    ],
+    "submit":"Save Changes",
+    "instanceTheme":"dark",
+    "playerLayout":"fitToContainer",
+    "videoPlayerWidth":"1006",
+    "videoPlayerHeight":"420",
+    "videoPlayerShadow":"effect2",
+    "colorAccent":"#d80073",
+    "posterImg":"",
+    "logoShow":"Yes",
+    "logoPath":"http:\/\/creativeinteractivemedia.com\/player\/Elite_video_player\/wp-content\/uploads\/2016\/11\/logo.png",
+    "logoPosition":"bottom-left",
+    "logoClickable":"Yes",
+    "logoGoToLink":"http:\/\/codecanyon.net\/",
+    "allowSkipAd":"true",
+    "lightBox":"false",
+    "lightBoxAutoplay":"false",
+    "lightBoxThumbnail":"",
+    "lightBoxThumbnailWidth":"400",
+    "lightBoxThumbnailHeight":"220",
+    "lightBoxCloseOnOutsideClick":"true",
+    "onFinish":"Play next video",
+    "autoplay":"false",
+    "loadRandomVideoOnStart":"No",
+    "shuffle":"No",
+    "playlist":"Right playlist",
+    "playlistBehaviourOnPageload":"opened (default)",
+    "playlistScrollType":"light",
+    "hideVideoSource":"true",
+    "showAllControls":"true",
+    "rightClickMenu":"true",
+    "autohideControls":"2",
+    "hideControlsOnMouseOut":"No",
+    "fullscreen":"Fullscreen native",
+    "nowPlayingText":"Yes",
+    "infoShow":"Yes",
+    "shareShow":"Yes",
+    "facebookShow":"Yes",
+    "twitterShow":"Yes",
+    "mailShow":"Yes",
+    "facebookShareName":"Elite video player",
+    "facebookShareLink":"http:\/\/codecanyon.net\/item\/elite-video-player-wordpress-plugin\/10496434",
+    "facebookShareDescription":"Elite Video Player is stunning, modern, responsive, fully customisable high-end video player for WordPress that support advertising and the most popular video platforms like YouTube, Vimeo or self-hosting videos (mp4).",
+    "facebookSharePicture":"https:\/\/0.s3.envato.com\/files\/123866118\/preview.jpg",
+    "twitterText":"Elite video player",
+    "twitterLink":"http:\/\/codecanyon.net\/item\/elite-video-player-wordpress-plugin\/10496434",
+    "twitterHashtags":"wordpressvideoplayer",
+    "twitterVia":"Creative media",
+    "googlePlus":"http:\/\/codecanyon.net\/item\/elite-video-player-wordpress-plugin\/10496434",
+    "embedShow":"Yes",
+    "embedCodeSrc":"http:\/\/yourwebsite.com\/player\/deploy\/index.html",
+    "embedCodeW":"746",
+    "embedCodeH":"420",
+    "embedShareLink":"http:\/\/codecanyon.net\/",
+    "youtubeControls":"custom controls",
+    "youtubeSkin":"dark",
+    "youtubeColor":"red",
+    "youtubeQuality":"default",
+    "youtubeShowRelatedVideos":"Yes",
+    "vimeoColor":"00adef",
+    "videoType":"HTML5 (self-hosted)",
+    "preloadSelfHosted":"none",
+    "videoRatio":"1.77777777778",
+    "videoRatioStretch":"false",
+    "posterImgOnVideoFinish":"",
+    "advertisementTitle":"Advertisement",
+    "skipAdvertisementText":"Skip advertisement",
+    "skipAdText":"You can skip this ad in",
+    "playBtnTooltipTxt":"Play",
+    "pauseBtnTooltipTxt":"Pause",
+    "rewindBtnTooltipTxt":"Rewind",
+    "downloadVideoBtnTooltipTxt":"Download video",
+    "qualityBtnOpenedTooltipTxt":"Close settings",
+    "qualityBtnClosedTooltipTxt":"Settings",
+    "muteBtnTooltipTxt":"Mute",
+    "unmuteBtnTooltipTxt":"Unmute",
+    "fullscreenBtnTooltipTxt":"Fullscreen",
+    "exitFullscreenBtnTooltipTxt":"Exit fullscreen",
+    "infoBtnTooltipTxt":"Show info",
+    "embedBtnTooltipTxt":"Embed",
+    "shareBtnTooltipTxt":"Share",
+    "volumeTooltipTxt":"Volume",
+    "playlistBtnClosedTooltipTxt":"Show playlist",
+    "playlistBtnOpenedTooltipTxt":"Hide playlist",
+    "facebookBtnTooltipTxt":"Share on Facebook",
+    "twitterBtnTooltipTxt":"Share on Twitter",
+    "googlePlusBtnTooltipTxt":"Share on Google+",
+    "lastBtnTooltipTxt":"Go to last video",
+    "firstBtnTooltipTxt":"Go to first video",
+    "nextBtnTooltipTxt":"Play next video",
+    "previousBtnTooltipTxt":"Play previous video",
+    "shuffleBtnOnTooltipTxt":"Shuffle on",
+    "shuffleBtnOffTooltipTxt":"Shuffle off",
+    "nowPlayingTooltipTxt":"NOW PLAYING",
+    "embedWindowTitle1":"SHARE THIS PLAYER:",
+    "embedWindowTitle2":"EMBED THIS VIDEO IN YOUR SITE:",
+    "embedWindowTitle3":"SHARE LINK TO THIS PLAYER:",
+    "showGlobalPrerollAds":"false",
+    "globalPrerollAds":"url1;url2;url3;url4;url5",
+    "globalPrerollAdsSkipTimer":"5",
+    "globalPrerollAdsGotoLink":"http:\/\/codecanyon.net\/",
+    "floatPlayerOutsideViewport":"true",
+    "iOSPlaysinline":"true",
+    "googleAnalyticsTrackingCode":"",
+    "ccShowOnHTML5Videos":"false",
+    "ccShowOnVideoLoad":"false",
+    "ccBtnOpenedTooltipTxt":"Hide captions",
+    "ccBtnClosedTooltipTxt":"Show captions",
+    "HTML5VideoQuality":"HD",
+    "rewindShow":"Yes",
+    "qualityShow":"Yes",
+    "mutedNotificationText":"Video has no sound",
+    "action":"elite_save",
+    "security":"undefined",
+    "status":"published",
+    "showAdvertiserName":"true",
+    "advertiserName":"visitAdvertiser.com",
+    "rootFolder":"http:\/\/creativeinteractivemedia.com\/player\/Elite_video_player\/wp-content\/plugins\/Elite-video-player\/"
+}
+
+</div></div>
+
+
+
+
+
+
+
+<p class="style3" style="margin-top:20px">Choose color:</p>
+<div class="colorAccentBox" style="position:relative;width:100%;background:rgba(255, 0, 0, 0);-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;cursor:default;-webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;-o-transition: all .2s ease-out;transition: all .2s ease-out;">
+ <div class="colorAccent lime colorEffect" style="width:20px; height:20px; z-index:200; margin-left:0px; cursor:pointer; display:inline-block; background:#a4c400; border-radius: 50%;"></div>
+ <div class="colorAccent green colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #60a917; border-radius: 50%;"></div>
+ <div class="colorAccent emerald colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #008a00; border-radius: 50%;"></div>
+ <div class="colorAccent green2 colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #00cb96; border-radius: 50%;"></div>
+ <div class="colorAccent teal colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #00aba9; border-radius: 50%;"></div>
+ <div class="colorAccent cyan colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #1ba1e2; border-radius: 50%;"></div>
+ <div class="colorAccent cobalt colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #0050ef; border-radius: 50%;"></div>
+ <div class="colorAccent indigo colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #6a00ff; border-radius: 50%;"></div>
+ <div class="colorAccent violet colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #aa00ff; border-radius: 50%;"></div>
+ <div class="colorAccent pink colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #f472d0; border-radius: 50%;"></div>
+ <div class="colorAccent magenta colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #d80073; border-radius: 50%;"></div>
+ <div class="colorAccent crimson colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #a20025; border-radius: 50%;"></div>
+ <div class="colorAccent red colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #e51400; border-radius: 50%;"></div>
+ <div class="colorAccent red2 colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #e97770; border-radius: 50%;"></div>
+ <div class="colorAccent orange colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #fa6800; border-radius: 50%;"></div>
+ <div class="colorAccent amber colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #f0a30a; border-radius: 50%;"></div>
+ <div class="colorAccent yellow colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #e3c800; border-radius: 50%;"></div>
+ <div class="colorAccent brown colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #825a2c; border-radius: 50%;"></div>
+ <div class="colorAccent olive colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #6d8764; border-radius: 50%;"></div>
+ <div class="colorAccent steel colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #647687; border-radius: 50%;"></div>
+ <div class="colorAccent mauve colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #76608a; border-radius: 50%;"></div>
+ <div class="colorAccent taupe colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #87794e; border-radius: 50%;"></div>
+ <div class="colorAccent grey colorEffect" style="width: 20px;height: 20px;z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;background: #cccccc; border-radius: 50%;"></div>
+</div>
+<div class="selectTheme" style="position:relative;width:100%;height:20px;margin-top:20px;background:rgba(255, 0, 0, 0);-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;cursor:default;-webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;-o-transition: all .2s ease-out;transition: all .2s ease-out;">
+ <div class="bannerLight chooseBannerSkin" style="z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;opacity: 1;border-style: solid;border-width: 2px;font-family: 'Open Sans',sans-serif,Arial,Helvetica;font-size: 15px;font-weight: 600;font-style: normal;background: none;filter: none;border-color: rgba(56,56,56,1) !important;color: #383838 !important;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;padding: 12px 14px;">LIGHT </div>
+ <div class="bannerDark chooseBannerSkin" style="z-index: 200;margin-left: 0px;cursor: pointer;display: inline-block;opacity: 1;border-style: solid;border-width: 2px;font-family: 'Open Sans',sans-serif,Arial,Helvetica;font-size: 15px;font-weight: 600;font-style: normal;background: none;filter: none;border-color: rgba(56,56,56,1) !important;color: #383838 !important;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;padding: 12px 14px;">DARK</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function(jQuery)
+{
+ jQuery(".bannerDark").click(function(event){
+  jQuery(".Elite_video_player").find(".elite_vp_light").removeClass("elite_vp_light").addClass("elite_vp_dark");
+ })
+ jQuery(".bannerLight").click(function(event){
+  jQuery(".Elite_video_player").find(".elite_vp_dark").removeClass("elite_vp_dark").addClass("elite_vp_light");
+ })
+ jQuery(".chooseBannerSkin").hover(function(){
+  jQuery(this).stop().animate({
+   opacity:0.55
+  } , 300);
+    },function(){
+  jQuery(this).stop().animate({
+   opacity:1
+  } , 300);
+    });
+ 
+ jQuery(".colorAccent").click(function(event){
+  jQuery(".colorAccent").each(function(i, obj) {
+   jQuery(this).css("transform", "scale(1)");
+  });
+  jQuery(this).css("transform", "scale(0.8)");
+ });
+ 
+ jQuery(".colorAccent").hover(function(){
+
+  jQuery(this).stop().animate({
+   opacity:0.55
+  } , 300);
+    },function(){
+  jQuery(this).stop().animate({
+   opacity:1
+  } , 300);
+    });
+ 
+    jQuery(".lime").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#a4c400"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#a4c400"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#a4c400"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#a4c400");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+    jQuery(".green").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#60a917"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#60a917"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#60a917"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#60a917");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".green2").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#00cb96"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#00cb96"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#00cb96"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#00cb96");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".emerald").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#008a00"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#008a00"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#008a00"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#008a00");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".teal").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#00aba9"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#00aba9"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#00aba9"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#00aba9");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".cyan").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#1ba1e2"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#1ba1e2"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#1ba1e2"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#1ba1e2");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".cobalt").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#0050ef"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#0050ef"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#0050ef"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#0050ef");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".indigo").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#6a00ff"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#6a00ff"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#6a00ff"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#6a00ff");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".violet").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#aa00ff"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#aa00ff"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#aa00ff"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#aa00ff");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".pink").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#f472d0"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#f472d0"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#f472d0"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#f472d0");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".magenta").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#d80073"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#d80073"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#d80073"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#d80073");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".crimson").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#a20025"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#a20025"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#a20025"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#a20025");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".red").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#e51400"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#e51400"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#e51400"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#e51400");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".red2").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#e97770"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#e97770"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#e97770"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#e97770");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".orange").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#fa6800"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#fa6800"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#fa6800"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#fa6800");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".amber").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#f0a30a"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#f0a30a"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#f0a30a"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#f0a30a");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".yellow").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#e3c800"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#e3c800"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#e3c800"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#e3c800");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".brown").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#825a2c"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#825a2c"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#825a2c"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#825a2c");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".olive").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#6d8764"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#6d8764"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#6d8764"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#6d8764");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".steel").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#647687"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#647687"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#647687"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#647687");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".mauve").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#76608a"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#76608a"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#76608a"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#76608a");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".taupe").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#87794e"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#87794e"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#87794e"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#87794e");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ jQuery(".grey").click(function(event){
+             jQuery(".elite_vp_themeColor").css({"background":"#cccccc"});
+      jQuery(".elite_vp_themeColorText").css({"color":"#cccccc"});
+      jQuery(".elite_vp_playBtnBg").css({"background":"#cccccc"});
+      jQuery(".elite_vp_btnOverScreen").hover(
+   function(){
+    jQuery(this).css("background", "#cccccc");
+   },
+   function(){
+    jQuery(this).css("background", "");
+   }
+                        ); 
+    });
+ 
+})
+</script>
+
+</div></div>
+<br/>
+<br/>
+
+
+
+
+
