@@ -3,40 +3,25 @@ $(document).ready(function () {
 
     player.playlist([
         {
-            name: 'Dsports',
+            name: 'Peacetv Bangla',
             autoplay: true,
             sources: [
-                {src: 'http://172.28.28.112/live/antbd1001/index.m3u8', type: 'application/x-mpegURL'},
+                {src: 'http://peacetv.ashttp22.visionip.tv/live/peacetv-peacetv-peacetv-bangla-hsslive-25f-16x9-SD/chunklist.m3u8', type: 'application/x-mpegURL'},
             ]
         },
         {
-            name: 'Gazi TV',
+            name: 'peacetv urdu',
             sources: [
-                {src: 'http://172.28.28.112/live/antbd1006/index.m3u8', type: 'application/x-mpegURL'},
+                {src: 'http://peacetv.ashttp22.visionip.tv/live/peacetv-peacetv-peacetv-urdu-hsslive-25f-16x9-SD/chunklist.m3u8', type: 'application/x-mpegURL'},
             ]
         },
         {
-            name: 'Masranga Tv',
+            name: 'Peacetv china',
             sources: [
-                {src: 'http://103.85.196.10:8080/hls/one.m3u8', type: 'application/x-mpegURL'},
+                {src: 'http://peacetv.ashttp22.visionip.tv/live/peacetv-peacetv-peacetv-china-hsslive-25f-16x9-SD/chunklist.m3u8', type: 'application/x-mpegURL'},
             ]
         },
-        {
-            name: 'Masranga Tv 2',
-            sources: [
-                {src: 'http://boss.bdtv.live:8080/hls/2.m3u8', type: 'application/x-mpegURL'},
-            ]
-		},
-		{
-            name: 'Masranga 2',
-            sources: [
-                {src: 'http://boss.bdtv.live:8080/hls/3.m3u8', type: 'application/x-mpegURL'},
-            ]
-        },
-		{
-            name: 'sony six',
-            sources: [
-                {src: 'http://172.28.28.112/live/antbd1002/index.m3u8', type: 'application/x-mpegURL'},
+        
             ]
         }]);
 
